@@ -79,13 +79,5 @@ nextAudio = (direction) => {
 playAudio(1)
 
 setInterval(() => {
-    document.querySelector('.time').innerHTML = `${audio[currentSong].currentTime.toFixed(0)}sec`
-}, 1000)
-
-// document.querySelector('button:nth-child(2)').addEventListener("click", function() {
-//     playAudio(1)
-// });
-
-document.body.addEventListener("click", function(event) {
-    console.log('clicked')
-  });
+    document.querySelector('.time').innerHTML = `${audio[currentSong].currentTime.toFixed(2)}sec`
+}, 1)
