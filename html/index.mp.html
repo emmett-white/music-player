@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="../css/style.mp.css">
+</head>
+<body>
+    <section>
+        <img src="../firstsong.jpg" alt="first song">
+        <img src="../secondsong.jpg" alt="second song">
+        <img src="../thirdsong.jpg" alt="third song">
+
+        <audio>
+            <source src="https://lis.ijjiii.is/a7f17fb14e79aec721c9f460dfdf615d/LUgfWP74-nA/crszeeazeaozs" type="audio/ogg">
+        </audio>
+
+        <audio>
+            <source src="https://lii.ijjiii.is/752179a4b8a4828a9125fbaaee1e7eda/Lcs74EHS-OQ/crsveeaveaovs" type="audio/ogg">
+        </audio>
+
+        <audio>
+            <source src="https://iij.ijjiii.is/aa89eedf05157272577397b13a700f5f/AjxflPTZ3o8/crsweeaweaows" type="audio/ogg">
+        </audio>
+
+        <p>Popov - Odgovor</p>
+        <p class="time">00:00</p>
+
+        <center>
+            <button onclick="audioStatus(true)">Pause</button>
+            <button onclick="audioStatus(false)">Resume</button>
+            <button onclick="nextAudio(false)">Prev Song</button>
+            <button onclick="nextAudio(true)">Next Song</button>
+        </center>
+    </section>
+
+    <script src="../js/app.mp.js" async defer></script>
+</body>
+</html>

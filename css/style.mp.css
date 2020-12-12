@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, rgb(255, 78, 196), rgb(61, 134, 243));
+}
+
+section {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0 2px 14px #000,
+                inset 0 0px 14px #e91d1d;
+
+    width: 350px;
+    height: 460px;
+}
+
+section p {
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #333;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+section img {
+    display: none;
+
+    width: 200px;
+    height: 200px;
+
+    margin: 2px auto;
+    margin-top: 20px;
+
+    border-radius: 50%;
+    border: 2px solid rgba(255, 0, 0, .6);
+
+    animation: rotate 10s infinite linear;
+}
+
+section button {
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    /* margin: 25px 10px; */
+    margin: 10px;
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    border: 1px solid #000;
+
+    background: none;
+
+    transition: .4s;
+}
+
+section button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 1920px) {
+    section {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section {
+        width: 300px;
+        height: 420px;
+    }
+
+    section img {
+        width: 150px;
+        height: 150px;
+    }
+
+    section button {
+        margin: 10px 4px auto;
+    }
+}
